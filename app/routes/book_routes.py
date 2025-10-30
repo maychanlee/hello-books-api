@@ -22,6 +22,10 @@ def create_book():
     }
     return response, 201
 
+# @books_bp.get("")
+# def get_all_books():
+#     return make_response("I'm a teapot!", 418)
+
 @books_bp.get("")
 def get_all_books():
     # query = db.select(Book).order_by(Book.id)
